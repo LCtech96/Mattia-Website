@@ -4,13 +4,6 @@ export default function ChiSonoSection() {
   return (
     <section id="chi-sono" className="section-container bg-beige-50">
       <div className="max-w-6xl mx-auto">
-        <div className="mb-16">
-          <p className="text-elegant text-charcoal-600 max-w-3xl">
-            Da oltre vent&apos;anni affianchiamo famiglie, imprenditori e professionisti nella gestione e trasmissione del patrimonio. 
-            Il nostro team multidisciplinare unisce competenze legali, fiscali e finanziarie, offrendo consulenze su misura e aggiornate 
-            alle normative nazionali e internazionali.
-          </p>
-        </div>
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="relative aspect-square overflow-hidden">
             <ProfileImage

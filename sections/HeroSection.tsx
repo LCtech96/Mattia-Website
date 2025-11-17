@@ -58,6 +58,7 @@ export default function HeroSection() {
               fill
               className="object-cover"
               priority
+              quality={100}
               sizes="100vw"
               style={{ objectPosition: 'right bottom' }}
               onError={() => {
@@ -76,7 +77,7 @@ export default function HeroSection() {
       <div className="section-container w-full relative z-10 py-12 md:py-16 lg:py-24">
         <div className="max-w-5xl">
           <p className="text-sm sm:text-base md:text-lg text-beige-100/95 mb-6 md:mb-8 max-w-2xl leading-relaxed">
-            Soluzioni personalizzate di pianificazione patrimoniale e successoria per garantire sicurezza ai tuoi cari e tranquillità al tuo domani.
+            Soluzioni personalizzate di pianificazione patrimoniale per garantire sicurezza ai tuoi cari e tranquillità al tuo domani.
           </p>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-normal text-beige-50 mb-8 md:mb-12 max-w-4xl leading-tight" style={{ fontFamily: 'Playfair Display, serif', letterSpacing: '-0.02em' }}>
             Proteggi il tuo patrimonio,<br />
