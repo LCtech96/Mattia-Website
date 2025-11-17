@@ -32,7 +32,7 @@ export default function ChiSonoPage() {
               <h2 className="heading-3">La Mia Storia</h2>
               <p className="text-body mb-6">
                 Sono <strong>Mattia Orlando</strong>, consulente patrimoniale dedicato con una passione per aiutare le persone
-                a proteggere e far crescere il proprio patrimonio. Opero con la solidità e l'esperienza del <strong>Gruppo Vitanuova</strong>,
+                a proteggere e far crescere il proprio patrimonio. Opero con la solidità e l&apos;esperienza del <strong>Gruppo Vitanuova</strong>,
                 un punto di riferimento nel settore della consulenza patrimoniale.
               </p>
               
@@ -45,9 +45,9 @@ export default function ChiSonoPage() {
               
               <h2 className="heading-3 mt-8">Approccio Tech e AI</h2>
               <p className="text-body mb-6">
-                Credo fermamente nell'innovazione come strumento per offrire consulenza di qualità superiore. Utilizzo tecnologie
+                Credo fermamente nell&apos;innovazione come strumento per offrire consulenza di qualità superiore. Utilizzo tecnologie
                 avanzate e intelligenza artificiale per analisi predittive, ottimizzazione delle strategie e valutazioni più precise.
-                Questo approccio mi permette di combinare l'esperienza umana con la potenza dell'analisi tecnica.
+                Questo approccio mi permette di combinare l&apos;esperienza umana con la potenza dell&apos;analisi tecnica.
               </p>
               
               <h2 className="heading-3 mt-8">I Miei Valori</h2>
@@ -73,7 +73,7 @@ export default function ChiSonoPage() {
               <h2 className="heading-3 mt-8">La Mia Mission</h2>
               <p className="text-body mb-6">
                 La mia missione è affiancarti nella costruzione di una strategia patrimoniale solida che protegga il tuo futuro
-                e quello della tua famiglia. Utilizzo strumenti all'avanguardia e un approccio umano e personalizzato per garantire
+                e quello della tua famiglia. Utilizzo strumenti all&apos;avanguardia e un approccio umano e personalizzato per garantire
                 che ogni decisione sia presa con consapevolezza e serenità.
               </p>
             </div>

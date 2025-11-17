@@ -22,7 +22,7 @@ export default function CookiePolicyPage() {
           <h2 className="heading-3">Cosa sono i Cookie</h2>
           <p className="text-body">
             I cookie sono piccoli file di testo che vengono memorizzati sul tuo dispositivo quando visiti un sito web.
-            Vengono utilizzati per migliorare l'esperienza di navigazione e per raccogliere informazioni statistiche.
+            Vengono utilizzati per migliorare l&apos;esperienza di navigazione e per raccogliere informazioni statistiche.
           </p>
           
           <h2 className="heading-3">Tipi di Cookie Utilizzati</h2>
@@ -40,7 +40,7 @@ export default function CookiePolicyPage() {
           
           <h3 className="text-xl font-semibold mt-6 mb-3">Cookie di Marketing</h3>
           <p className="text-body">
-            Utilizziamo Meta Pixel per misurare l'efficacia delle campagne pubblicitarie. Questi cookie richiedono
+            Utilizziamo Meta Pixel per misurare l&apos;efficacia delle campagne pubblicitarie. Questi cookie richiedono
             il tuo consenso.
           </p>
           

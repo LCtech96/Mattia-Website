@@ -43,13 +43,13 @@ export default function PrivacyPolicyPage() {
           <ul className="text-body">
             <li>Rispondere alle richieste di contatto e consulenza</li>
             <li>Fornire i servizi richiesti</li>
-            <li>Migliorare l'esperienza di navigazione sul sito</li>
+            <li>Migliorare l&apos;esperienza di navigazione sul sito</li>
             <li>Analisi statistiche e di marketing (con consenso)</li>
           </ul>
           
           <h2 className="heading-3">4. Base Giuridica</h2>
           <p className="text-body">
-            Il trattamento dei dati si basa sul consenso dell'interessato e sull'esecuzione di misure precontrattuali.
+            Il trattamento dei dati si basa sul consenso dell&apos;interessato e sull&apos;esecuzione di misure precontrattuali.
           </p>
           
           <h2 className="heading-3">5. Conservazione dei Dati</h2>
@@ -58,9 +58,9 @@ export default function PrivacyPolicyPage() {
             salvo obblighi di legge che richiedano una conservazione più lunga.
           </p>
           
-          <h2 className="heading-3">6. Diritti dell'Interessato</h2>
+          <h2 className="heading-3">6. Diritti dell&apos;Interessato</h2>
           <p className="text-body">
-            Ai sensi del GDPR, l'interessato ha diritto a:
+            Ai sensi del GDPR, l&apos;interessato ha diritto a:
           </p>
           <ul className="text-body">
             <li>Accedere ai propri dati personali</li>
