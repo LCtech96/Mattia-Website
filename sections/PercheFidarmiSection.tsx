@@ -17,7 +17,7 @@ export default function PercheFidarmiSection() {
   return (
     <section className="section-container bg-white">
       <div className="max-w-4xl mx-auto">
-        <h2 className="heading-2 text-center mb-12">Perché Fidarmi di Me</h2>
+        <h2 className="heading-2 text-center mb-12">Perché Fidarti di Me</h2>
         <div className="space-y-8">
           {punti.map((punto, index) => (
             <div key={index} className="flex items-start space-x-6">
