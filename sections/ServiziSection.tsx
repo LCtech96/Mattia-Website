@@ -59,27 +59,27 @@ const servizi = [
 
 export default function ServiziSection() {
   return (
-    <section id="servizi" className="section-container bg-gray-50">
+    <section id="servizi" className="section-container bg-beige-50">
       <div className="max-w-7xl mx-auto">
-        <h2 className="heading-2 text-center mb-4">I Miei Servizi</h2>
-        <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto text-lg">
+        <h2 className="heading-2 mb-8">I Miei Servizi</h2>
+        <p className="text-elegant text-charcoal-600 mb-16 max-w-2xl">
           Soluzioni personalizzate per ogni esigenza patrimoniale
         </p>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
           {servizi.map((servizio, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-100"
+              className="bg-beige-50 border-b-2 border-charcoal-200 pb-8 hover:border-charcoal-700 transition-colors duration-300"
             >
-              <div className="text-primary-600 mb-4">{servizio.icon}</div>
-              <h3 className="heading-3 text-xl mb-3">{servizio.title}</h3>
-              <p className="text-gray-700">{servizio.description}</p>
+              <div className="text-charcoal-700 mb-6">{servizio.icon}</div>
+              <h3 className="heading-3 mb-4">{servizio.title}</h3>
+              <p className="text-elegant text-charcoal-600">{servizio.description}</p>
             </div>
           ))}
         </div>
-        <div className="text-center">
-          <Link href="/contatti" className="btn-primary text-lg px-8 py-4 inline-block">
-            Parla con Mattia
+        <div className="text-left">
+          <Link href="/contatti" className="btn-primary inline-block">
+            Prenota una consulenza
           </Link>
         </div>
       </div>

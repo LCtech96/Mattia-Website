@@ -15,21 +15,14 @@ const punti = [
 
 export default function PercheFidarmiSection() {
   return (
-    <section className="section-container bg-white">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="heading-2 text-center mb-12">Perché Fidarti di Me</h2>
-        <div className="space-y-8">
+    <section className="section-container bg-sage-700 text-beige-50">
+      <div className="max-w-5xl mx-auto">
+        <h2 className="heading-2 text-beige-50 mb-16">Perché Fidarti di Me</h2>
+        <div className="space-y-12">
           {punti.map((punto, index) => (
-            <div key={index} className="flex items-start space-x-6">
-              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center">
-                <svg className="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">{punto.title}</h3>
-                <p className="text-gray-700 text-lg">{punto.description}</p>
-              </div>
+            <div key={index} className="border-b border-sage-600 pb-12 last:border-0 last:pb-0">
+              <h3 className="heading-3 text-beige-50 mb-4">{punto.title}</h3>
+              <p className="text-elegant text-beige-200">{punto.description}</p>
             </div>
           ))}
         </div>

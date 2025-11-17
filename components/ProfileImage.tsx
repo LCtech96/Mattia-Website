@@ -36,10 +36,10 @@ export default function ProfileImage({ src, alt, className, priority, sizes }: P
   // Mostra placeholder se c'è un errore o l'immagine non è ancora caricata
   if (imageError || !imageLoaded) {
     return (
-      <div className="relative w-full h-full bg-gradient-to-br from-primary-100 to-primary-200 flex items-center justify-center">
+      <div className="relative w-full h-full bg-gradient-to-br from-beige-200 to-beige-300 flex items-center justify-center">
         <div className="text-center p-8">
-          <div className="text-primary-600 text-5xl font-bold mb-2">MO</div>
-          <div className="text-primary-700 text-sm font-medium">Mattia Orlando</div>
+          <div className="text-charcoal-700 text-5xl font-normal mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>MO</div>
+          <div className="text-charcoal-600 text-sm font-medium">Mattia Orlando</div>
         </div>
       </div>
     );

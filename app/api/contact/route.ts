@@ -4,7 +4,9 @@ import { z } from "zod";
 
 const contactSchema = z.object({
   name: z.string().min(2).max(50),
+  surname: z.string().min(2).max(50).optional(),
   email: z.string().email(),
+  subject: z.string().min(3).max(100).optional(),
   phone: z.string().optional(),
   message: z.string().min(10).max(1000),
   honeypot: z.string().max(0).optional(),
@@ -56,7 +58,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const { name, email, phone, message, honeypot } = validationResult.data;
+    const { name, surname, email, subject, phone, message, honeypot } = validationResult.data;
 
     // Check honeypot (bot detection)
     if (honeypot && honeypot.length > 0) {
@@ -69,13 +71,17 @@ export async function POST(request: NextRequest) {
     // Initialize Resend (you'll need to set RESEND_API_KEY in .env.local)
     const resend = new Resend(process.env.RESEND_API_KEY);
 
+    const fullName = surname ? `${name} ${surname}` : name;
+    const emailSubject = subject || `Nuova richiesta di contatto da ${fullName}`;
+
     // Send email
     const emailContent = `
 Nuova richiesta di contatto da mattiaorlando.com
 
-Nome: ${name}
+Nome: ${fullName}
 Email: ${email}
 Telefono: ${phone || "Non fornito"}
+Oggetto: ${subject || "Nessun oggetto specificato"}
 
 Messaggio:
 ${message}
@@ -88,7 +94,7 @@ IP: ${ip}
     const { data, error } = await resend.emails.send({
       from: "Website Contact <onboarding@resend.dev>", // Update with your verified domain
       to: ["info@mattiaorlando.com"],
-      subject: `Nuova richiesta di contatto da ${name}`,
+      subject: emailSubject,
       text: emailContent,
       reply_to: email,
     });
