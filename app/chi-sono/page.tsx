@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Image from "next/image";
+import ProfileImage from "@/components/ProfileImage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -18,10 +18,9 @@ export default function ChiSonoPage() {
           
           <div className="mb-12">
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl mb-8">
-              <Image
+              <ProfileImage
                 src="/assets/mattia-profile.jpg"
                 alt="Mattia Orlando"
-                fill
                 className="object-cover"
                 priority
                 sizes="(max-width: 768px) 100vw, 800px"

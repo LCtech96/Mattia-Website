@@ -1,4 +1,4 @@
-import Image from "next/image";
+import ProfileImage from "@/components/ProfileImage";
 
 export default function ChiSonoSection() {
   return (
@@ -7,10 +7,9 @@ export default function ChiSonoSection() {
         <h2 className="heading-2 text-center mb-12">Chi Sono</h2>
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative aspect-square rounded-2xl overflow-hidden shadow-xl">
-            <Image
+            <ProfileImage
               src="/assets/mattia-profile.jpg"
               alt="Mattia Orlando - Consulente Patrimoniale"
-              fill
               className="object-cover"
               priority
               sizes="(max-width: 768px) 100vw, 50vw"

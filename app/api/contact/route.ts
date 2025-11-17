@@ -90,7 +90,7 @@ IP: ${ip}
       to: ["info@mattiaorlando.com"],
       subject: `Nuova richiesta di contatto da ${name}`,
       text: emailContent,
-      replyTo: email,
+      reply_to: email,
     });
 
     if (error) {
