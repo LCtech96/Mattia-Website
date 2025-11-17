@@ -16,11 +16,21 @@ export default function ProfileImage({ src, alt, className, priority, sizes }: P
   const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
-    // Verifica se l'immagine esiste
+    // Verifica se l'immagine esiste solo in client-side
+    if (typeof window === 'undefined') return;
+    
     const img = new window.Image();
-    img.onload = () => setImageLoaded(true);
-    img.onerror = () => setImageError(true);
-    img.src = src;
+    img.onload = () => {
+      setImageLoaded(true);
+      setImageError(false);
+    };
+    img.onerror = () => {
+      setImageError(true);
+      setImageLoaded(false);
+    };
+    // Usa il percorso completo per il controllo
+    const fullSrc = src.startsWith('/') ? `${window.location.origin}${src}` : src;
+    img.src = fullSrc;
   }, [src]);
 
   // Mostra placeholder se c'è un errore o l'immagine non è ancora caricata
